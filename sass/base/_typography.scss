@@ -1,0 +1,69 @@
+body{
+   
+    font-family: "Lato",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(119, 119, 119);
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+
+.heading-primary{
+    color: #fff;
+
+    &--main{
+        display: block;
+        font-size: 7.3rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        
+}
+        
+        
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.7rem;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+        margin-bottom: 50px;
+    }
+    
+        
+}   
+
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .5s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-dark, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
