@@ -128,4 +128,29 @@
         }
     }
 
+    &__cta {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+       
+    }
+
+    &__price-box {
+        margin-bottom: 8rem;
+        color: $color-white;
+    }
+
+    &__price-only {
+        font-size: 1.5rem;
+    }
+
+    &__price-value{
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
 }
