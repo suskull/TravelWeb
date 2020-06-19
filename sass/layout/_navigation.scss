@@ -1,5 +1,7 @@
 .navigation {
     &__checkbox{
+        opacity: 0;
+        visibility: hidden;
 
     }
 
@@ -25,19 +27,21 @@
         right: 6.5rem;
         border-radius: 50%;
         z-index: 1000;
-
-       transform: scale(80);
+        transition: all 1s;
 
 
     }
 
     &__nav {
         height: 100vh;
-        width: 100%;
+        
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all .5s;
     }
 
     &__list {
@@ -47,6 +51,10 @@
         transform: translate(-50%,-50%);
         list-style: none;
         text-align: center;
+
+        //fix animation transform
+
+        width: 100%;
     }
 
     &__item {
@@ -82,5 +90,14 @@
             margin-right: 1rem;
         }
         
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
     }
 }
