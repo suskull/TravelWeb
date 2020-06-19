@@ -25,7 +25,28 @@
 }
 
 .section-story {
-    padding: 25rem 0;
+    padding: 25rem 0 19rem 0;
     margin-top: -25vh;
     position: relative;
+}
+
+.section-booking {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light,1), rgba($color-primary-dark,1));
+    
+
+}
+
+.booking {
+    background-image:linear-gradient(105deg, rgba($color-white,.7) 10%, rgba($color-white,.8) 50%, transparent 50%) ,url("../../img/nat-10.jpg");
+    background-size: cover;
+    height: 50rem;
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba($color-dark,.2);
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+
 }
