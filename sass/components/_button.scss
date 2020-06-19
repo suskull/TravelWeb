@@ -1,5 +1,6 @@
 
 .btn{
+    &,
     &:link,
     &:visited {
         text-decoration: none;
@@ -7,8 +8,13 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         transition: all .2s;
-        
+        font-size: $default-font-size;
         position: relative;
+
+        //change border for <button>
+        border: none;
+        cursor: pointer;
+      
     }
     
     &:hover {
@@ -22,7 +28,9 @@
     
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        outline:none;
         transform: translateY(-.1rem);
         box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
     }
@@ -37,7 +45,7 @@
     }
 
     &--green{
-        color:  #777;
+        color:  #fff;
         background-color: $color-primary ;
 
         &::after {

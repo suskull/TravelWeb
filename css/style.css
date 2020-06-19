@@ -87,16 +87,25 @@ body {
 .u-margin-bottom-2 {
   margin-bottom: 2rem; }
 
-.u-margin-top-8 {
-  margin-top: 8rem; }
+.u-margin-bottom-4 {
+  margin-bottom: 4rem; }
 
-.btn:link, .btn:visited {
+.u-margin-top-4 {
+  margin-top: 4rem; }
+
+.u-margin-top-2 {
+  margin-top: 2rem; }
+
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   border-radius: 10rem;
   padding: 1.5rem 4rem;
   display: inline-block;
   transition: all .2s;
-  position: relative; }
+  font-size: 1.6rem;
+  position: relative;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -105,7 +114,8 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
 
@@ -116,7 +126,7 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  color: #777;
+  color: #fff;
   background-color: #55c57a; }
   .btn--green::after {
     background-color: #55c57a; }
@@ -332,6 +342,76 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  border: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    border-bottom: 3px solid #55c57a;
+    outline: none; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  margin-left: 2rem;
+  margin-top: .7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem; }
+
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -.5rem;
+  left: 0; }
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: #55c57a;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s; }
+
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
+.form__radio-input {
+  opacity: 0; }
 
 .header {
   position: relative;
