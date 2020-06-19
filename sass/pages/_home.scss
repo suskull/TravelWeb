@@ -21,7 +21,13 @@
     background-color: $color-grey-light-1;
 
     margin-top: -15vh;
+    z-index: 10;
 
+    &__button {
+        top: 50rem;
+        z-index: 20;
+    }
+ 
 }
 
 .section-story {
