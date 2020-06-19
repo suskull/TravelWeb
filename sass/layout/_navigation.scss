@@ -80,12 +80,19 @@
 
         }
         
-        &:hover,
-        &:active {
+        &:hover{
         background-position: 100%;
         color: $color-primary;
             transform: translateX(1rem);
         }
+
+        &:active  &__b{
+            background-position: 0%;
+            color: $color-white;
+            transform: translateX(-1rem);
+        }
+
+       
 
         span{
             display:inline-block;

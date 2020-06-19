@@ -1,0 +1,93 @@
+.popup {
+
+    z-index: 9999;
+    background-color:rgba( $color-dark ,.9);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:target &__content{
+        transform: translate(-50%,-50%) scale(.85);
+        opacity: 1;
+
+    }
+    
+
+    &__content {
+        background-color: $color-white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 50rem;
+        width: 75%;
+        transform: translate(-50%,-50%) scale(.5);
+        display: table;
+        opacity: 0;
+        transition: all .5s;
+        
+
+    }
+
+    &__left {
+        width: 33.333333%;
+        display: table-cell;
+    }
+
+    &__right {
+        width: 66.666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1rem 4rem;
+    }
+
+    &__img {
+
+        width: 100%;
+        display: block; 
+        object-fit: cover;
+        height: 22%;
+       
+
+    }
+
+    &__text {
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 2px solid #eee;
+
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens:auto;
+    }
+
+    &__close {
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-dark;
+            line-height: 1;
+            font-size: 3rem;
+            position: absolute;
+            top:2.5rem;
+            right:2.5rem;
+        }
+
+        &:hover {
+            color:$color-primary;
+        }
+    }
+        
+}

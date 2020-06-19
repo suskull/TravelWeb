@@ -24,11 +24,11 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>01</span>About our site</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>02</span>Your benefit</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>03</span>Popular Tours</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>04</span>Stories</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Book now</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About our site</a></li>
+                    <li class="navigation__item"><a href="#section-details" class="navigation__link"><span>02</span>Your benefit</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#section-story" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#section-booking" class="navigation__link"><span>05</span>Book now</a></li>
                 </ul>
             </nav>
 
@@ -43,13 +43,13 @@
                     <span class = "heading-primary--main">OUTDOOR</span>
                     <span class = "heading-primary--sub">IS WHERE LIFE HAPPENS </span>
                 </h1>
-                <a href = "#" class ="btn btn--white btn--animated">DISCOVER OUR TOUR</a>
+                <a href = "#section-tours" class ="btn btn--white btn--animated">DISCOVER OUR TOUR</a>
                 
             </div>
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about " id="section-about">
                 <div class="u-center-text u-margin-bottom-8">
                     <h2 class="heading-secondary">
                         WELCOME TO THE NATUROUS TOUR
@@ -74,7 +74,7 @@
                 </div>
     
             </section>
-            <section class="section-features">
+            <section class="section-features" id="section-details">
                 <div class= "row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -117,7 +117,7 @@
                 
 
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-margin-bottom-8 u-center-text">
                     <h2 class="heading-secondary">Take your tour</h2>
                 </div>
@@ -145,7 +145,7 @@
                                         <p class ="card__price-only"> Only </p>
                                         <p class ="card__price-value"> $333 </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                             <br>
@@ -174,7 +174,7 @@
                                         <p class ="card__price-only"> Only </p>
                                         <p class ="card__price-value"> $444 </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                             <br>
@@ -203,7 +203,7 @@
                                         <p class ="card__price-only"> Only </p>
                                         <p class ="card__price-value"> $888 </p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                             <br>
@@ -216,7 +216,7 @@
                 
             </section>
 
-            <section class="section-story">
+            <section class="section-story" id="section-story">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay loop muted>
                         <source src="img/video.mp4" type="video/mp4">
@@ -256,7 +256,7 @@
                 </div>
                
             </section>
-            <section class="section-booking">
+            <section class="section-booking" id="section-booking">
                 <div class="row">
                     <div class="booking">
                             <div class="booking__form">
@@ -304,7 +304,7 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="./img/logo-green-2x.png" alt="Logo" class="footer__logo">
+                <img src="./img/logo-green-1x.png" alt="Logo" class="footer__logo">
             </div>
             <div class="row">
                 <div class="col-1-of-2">            
@@ -326,6 +326,22 @@
             </div>
         
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./img/nat-8.jpg" alt=Photo class ="popup__img">
+                    <img src="./img/nat-9.jpg" alt=Photo class ="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-4">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-2">Important Please read the terms before booking</h3>
+                    <p class="popup__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequatur sit vitae. Vero non suscipit recusandae odio tempore amet neque expedita! Doloribus adipisci vel nisi perferendis vitae at, provident consequatur ur sit vitae. Vero non suscipit recusandae! Doloribus adipisci vel nisi perferendis vitae at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequatur sit vitae. Vero non suscipit recusandae odio tempore amet neque expedita! Doloribus adipisci vel nisi perferendis vitae at, provident consequatur ur sit vitae. Vero non suscipit recusandae odio tempore amet neque expedita!</p>
+
+                    <a href="" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
         
     </body>
 </html>
