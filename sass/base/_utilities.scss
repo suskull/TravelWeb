@@ -3,7 +3,11 @@
 }
 
 .u-margin-bottom-8 {
-    margin-bottom: 8rem;;
+    margin-bottom: 8rem;
+
+    @include respond(tab) {
+        margin-bottom: 5rem !important;
+    }
 }
 
 .u-margin-bottom-2 {
@@ -11,6 +15,9 @@
 }
 .u-margin-bottom-4 {
     margin-bottom: 4rem;
+    @include respond(tab) {
+        margin-bottom: 3rem !important;
+    }
 }
 
 .u-margin-top-4{

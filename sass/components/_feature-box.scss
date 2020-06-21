@@ -7,6 +7,10 @@
     border-radius: 3px;
     transition: all .3s;
 
+    @include respond(tab) {
+        padding: 2rem;
+    }
+
     &__icon {
 
         font-size: 5rem;

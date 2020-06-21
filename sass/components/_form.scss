@@ -56,6 +56,10 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(tab) {
+            width: 100%;
+        }
         
     }
 

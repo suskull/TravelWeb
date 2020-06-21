@@ -1,12 +1,20 @@
 .footer {
     
     background-color: #333;
-    padding: 5rem;
+    padding: 5rem 0;
     font-size: 1.4rem;
+
+    @include respond(tab) {
+        padding: 8rem 0;
+    }
+
 
     &__logo-box {
         margin-bottom: 8rem;
         text-align: center;
+        @include respond(tab) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo{
@@ -52,6 +60,11 @@
         border-top: 1px solid $color-grey-dark-1;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond(tab) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
 
@@ -61,5 +74,10 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include respond(tab) {
+            width: 100%;
+            float: none;
+        }
     }
 }

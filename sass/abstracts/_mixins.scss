@@ -7,3 +7,20 @@
     }
     
   }
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width : 37.5rem) {@content}; //600px
+    }
+    @if $breakpoint == tab {
+        @media (max-width : 56.25rem) {@content}; //900px
+    }
+    @if $breakpoint == laptop {
+        @media (max-width : 75rem) {@content}; //1200px
+    }
+    @if $breakpoint == desktop {
+        @media (min-width : 112.5rem) {@content}; //mix 1800
+    }
+
+}
