@@ -312,11 +312,11 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__image--i1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(255, 119, 48, 0.6)), url(../../../../css/travel/img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(255, 119, 48, 0.6)), url(https://i.ibb.co/stZ3Jtk/nat-5.jpg); }
     .card__image--i2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(../../../../css/travel/img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(https://i.ibb.co/4RJnfP0/nat-6.jpg); }
     .card__image--i3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../../../../css/travel/img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(https://i.ibb.co/Tqx0Q8d/nat-7.jpg); }
   .card__heading {
     font-size: 2.5rem;
     position: absolute;
@@ -601,7 +601,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(https://i.ibb.co/zQzr3g3/hero.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
@@ -853,7 +853,7 @@ body {
       margin-top: -25vh; } }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../../../../css/travel/img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(https://i.ibb.co/2P8s8Gn/nat-4.jpg);
   padding: 20rem 0;
   transform: skewY(-7deg);
   margin-top: -25vh;
@@ -894,17 +894,17 @@ body {
       padding: 10rem 0; } }
 
 .booking {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../../../css/travel/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(https://i.ibb.co/nbKjgn6/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(119, 119, 119, 0.2); }
   @media (max-width: 75rem) {
     .booking {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../../../../css/travel/img/nat-10.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(https://i.ibb.co/nbKjgn6/nat-10.jpg);
       background-size: cover; } }
   @media (max-width: 56.25rem) {
     .booking {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../../../../css/travel/img/nat-10.jpg);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(https://i.ibb.co/nbKjgn6/nat-10.jpg);
       margin-left: -6rem;
       width: 130%; } }
   .booking__form {
