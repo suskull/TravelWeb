@@ -312,11 +312,11 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__image--i1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(255, 119, 48, 0.6)), url("../../img/nat-5.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.6), rgba(255, 119, 48, 0.6)), url(../../../../css/travel/img/nat-5.jpg); }
     .card__image--i2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url("../../img/nat-6.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(../../../../css/travel/img/nat-6.jpg); }
     .card__image--i3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url("../../img/nat-7.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../../../../css/travel/img/nat-7.jpg); }
   .card__heading {
     font-size: 2.5rem;
     position: absolute;
@@ -415,12 +415,19 @@ body {
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 37.5rem) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__image {
     width: 100%;
     height: 100%;
-    transition: all .3s; }
+    transition: all .3s;
+    margin: 0; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5rem) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -546,11 +553,14 @@ body {
     top: 50%;
     left: 50%;
     height: 50rem;
-    width: 75%;
+    width: 85%;
     transform: translate(-50%, -50%) scale(0.5);
     display: table;
     opacity: 0;
     transition: all .5s; }
+    @media (max-width: 56.25rem) {
+      .popup__content {
+        width: 100%; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -563,7 +573,11 @@ body {
     width: 100%;
     display: block;
     object-fit: cover;
-    height: 22%; }
+    height: 25%;
+    margin: 0; }
+    @media (max-width: 37.5rem) {
+      .popup__img {
+        height: 13%; } }
   .popup__text {
     margin-bottom: 4rem;
     column-count: 2;
@@ -833,9 +847,13 @@ body {
     .section-about {
       padding: 30rem 0;
       margin-top: -30vh; } }
+  @media (max-width: 56.25rem) {
+    .section-about {
+      padding: 30rem 0;
+      margin-top: -25vh; } }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url("../../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../../../../css/travel/img/nat-4.jpg);
   padding: 20rem 0;
   transform: skewY(-7deg);
   margin-top: -25vh;
@@ -860,33 +878,33 @@ body {
   position: relative; }
   @media (max-width: 56.25rem) {
     .section-story {
-      padding: 10rem 0; } }
-  @media (max-width: 56.25rem) {
-    .section-story__heading {
-      margin-top: 10rem; } }
+      padding: 10rem 0;
+      margin-top: -7vh; } }
   @media (max-width: 37.5rem) {
-    .section-story__heading {
-      margin-top: 13rem; } }
+    .section-story {
+      padding: 10rem 0;
+      margin-top: -4vh; } }
 
 .section-booking {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  margin: -16px 0 0 0; }
   @media (max-width: 56.25rem) {
     .section-booking {
       padding: 10rem 0; } }
 
 .booking {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../../img/nat-10.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 10%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../../../css/travel/img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(119, 119, 119, 0.2); }
   @media (max-width: 75rem) {
     .booking {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../../img/nat-10.jpg");
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../../../../css/travel/img/nat-10.jpg);
       background-size: cover; } }
   @media (max-width: 56.25rem) {
     .booking {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../../img/nat-10.jpg");
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../../../../css/travel/img/nat-10.jpg);
       margin-left: -6rem;
       width: 130%; } }
   .booking__form {

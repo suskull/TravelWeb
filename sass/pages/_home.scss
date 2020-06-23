@@ -7,10 +7,14 @@
         padding: 30rem 0;
         margin-top : -30vh;
     }
+    @include respond(tab) {
+        padding: 30rem 0;
+        margin-top : -25vh;
+    }
 }
 
 .section-features {
-    background-image : linear-gradient(to right bottom, rgba($color-primary-light,.7), rgba($color-primary-dark,.7)), url("../../img/nat-4.jpg");
+    background-image : linear-gradient(to right bottom, rgba($color-primary-light,.7), rgba($color-primary-dark,.7)), url(../../../../css/travel/img/nat-4.jpg);
     padding: 20rem 0;
     transform: skewY(-7deg);
     margin-top: -25vh;
@@ -46,29 +50,29 @@
     position: relative;
     @include respond(tab) {
         padding: 10rem 0;
+        margin-top: -7vh;
+    }
+    @include respond(phone) {
+        padding: 10rem 0;
+        margin-top: -4vh;
     }
 
-    &__heading{
-        @include respond(tab) {
-            margin-top: 10rem;
-        }
-        @include respond(phone) {
-            margin-top: 13rem;
-        }
-    }
+  
 }
 
 .section-booking {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light,1), rgba($color-primary-dark,1));
+    margin: -16px 0 0 0 ;
     @include respond(tab) {
         padding: 10rem 0;
+        
     }
 
 }
 
 .booking {
-    background-image:linear-gradient(105deg, rgba($color-white,.7) 10%, rgba($color-white,.8) 50%, transparent 50%) ,url("../../img/nat-10.jpg");
+    background-image:linear-gradient(105deg, rgba($color-white,.7) 10%, rgba($color-white,.8) 50%, transparent 50%) ,url(../../../../css/travel/img/nat-10.jpg);
     background-size: cover;
    
     border-radius: 3px;
@@ -79,7 +83,7 @@
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 65%,
         transparent 65%) ,
-        url("../../img/nat-10.jpg");
+        url(../../../../css/travel/img/nat-10.jpg);
         background-size: cover;
     }
 
@@ -87,9 +91,10 @@
         background-image: linear-gradient(to right, 
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 100%),
-        url("../../img/nat-10.jpg");
+        url(../../../../css/travel/img/nat-10.jpg);
         margin-left: -6rem;
         width: 130%;
+        
         
     }
 

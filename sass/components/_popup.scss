@@ -29,11 +29,15 @@
         top: 50%;
         left: 50%;
         height: 50rem;
-        width: 75%;
+        width: 85%;
         transform: translate(-50%,-50%) scale(.5);
         display: table;
         opacity: 0;
         transition: all .5s;
+        
+        @include respond(tab) {
+            width: 100%;
+        }
         
 
     }
@@ -55,7 +59,13 @@
         width: 100%;
         display: block; 
         object-fit: cover;
-        height: 22%;
+        height: 25%;
+        margin: 0;
+
+        @include respond(phone) {
+            height: 13%;
+        }
+
        
 
     }
